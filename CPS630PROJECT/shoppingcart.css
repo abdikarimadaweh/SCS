@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  --color-primary: #009579;
+  --color-primary-dark: #007f67;
+  --color-secondary: #252c6a;
+  --color-error: #cc3333;
+  --color-success: #4bb544;
+  --border-radius: 4px;
+
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 18px;
+  background: var(--color-primary);
+  background-size: cover;
+  font-family: "Spartan", sans-serif;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+  color: #088178;
+}
+section {
+  padding: 40px 80px;
+  margin-bottom: 100px;
+}
+.btn {
+  background-color: #e79349;
+  text-align: center;
+  display: inline-block;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  width: 350px;
+  height: 40px;
+  font-size: 20px;
+}
+.btn:hover,
+.btn:active {
+  border: 1px solid #cf6d17;
+  color: white;
+}
+
+/*   Cart     */
+
+.cart {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 25px 40px #1687d933;
+  align-items: center;
+}
+
+.Header {
+  margin: auto;
+  width: 90%;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(247, 111, 111, 0.867);
+}
+.remove {
+  font-size: 15;
+  font-weight: 600;
+  color: #007f67;
+  cursor: pointer;
+  border-bottom-style: 1px solid #e44c4c;
+}
+.Items {
+  margin: auto;
+  width: 90%;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.shoe {
+  text-align: center;
+  width: 15%;
+}
+
+.about {
+  height: 100%;
+}
+
+.title {
+  padding-top: 5px;
+  line-height: 10px;
+  font-size: 32px;
+  font-weight: 800;
+  color: #007f67;
+}
+
+.size {
+  font-size: 20px;
+  line-height: 10px;
+  font-weight: 800;
+  color: #007f67;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(95, 93, 93);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .size {
+  background-color: black;
+}
+
+.title {
+  padding-top: 5px;
+  line-height: 10px;
+  font-size: 32px;
+  font-weight: 800;
+  color: #007f67;
+}
+
+.counter {
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btnc {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 900;
+  color: black;
+  cursor: pointer;
+}
+
+.count {
+  font-size: 20px;
+  font-weight: 900;
+  color: black;
+}
+
+.prices {
+  height: 100%;
+  text-align: right;
+}
+
+.cost .delete {
+  padding-top: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #088178;
+}
+
+.delete {
+  color: #e44c4c;
+  margin-top: 5px;
+}
+
+hr {
+  width: 66%;
+  float: right;
+  margin-right: 5%;
+}
+.checkout {
+  float: right;
+  margin-right: 10%;
+  width: 30%;
+}
+.total {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.Subtotal {
+  font-size: 22px;
+  font-weight: 700;
+  color: #202020;
+}
+.items {
+  font-size: 16px;
+  font-weight: 500;
+  color: #909090;
+  line-height: 10px;
+}
+.total-amount {
+  font-size: 36px;
+  font-weight: 900;
+  color: #202020;
+}
+
+.button {
+  margin-top: 5px;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #202020;
+}

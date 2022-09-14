@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript">
+	function goToNewPage(src){
+		window.location = src;
+	}
+</script>
+<title>Untitled Document</title>
+</head>
+	<h2>DM Management Page</h2>
+	<p>Choose the table you want to manage:</p>
+	<form><select onChange="goToNewPage(this.value)">
+		<option value="DBm_item.html">Item dbMaintian</option>
+		<option value="DBM_order.html">Order dbMaintian</option>
+		<option value="DBM_user.html">User dbMaintian</option>
+	</select>
+	</form>
+<body>
+</body>
+</html>

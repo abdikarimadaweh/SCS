@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="jquery.ndd.js"></script>
+    <script src="dragdrop.js"></script>
+    <script src="https://kit.fontawesome.com/6279fa108d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>My Project</title>
+</head>
+
+<body>
+    <div id="content">
+        <section class="title-page">
+            <div class="header">
+                <a href="index.html"><img src="img/SCS-logo.png" alt="SCS" class="logo" /></a>
+
+                <ul id="navbar">
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#footer">Contact Us</a></li>
+                    <li><a href="login.html">Sign In</a></li>
+                    <li><a href="login.html">Sign Up</a></li>
+                    <li><a href="DBM_Login.html">DB Maintain</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li id="bag">
+                        <a onclick="showcart()" ><i class="fa-solid fa-bag-shopping"></i
+            ></a>
+                    </li>
+                    <a href="#" id="back"><i class="fa-solid fa-circle-arrow-left"></i
+          ></a>
+                </ul>
+                <div class="side-menue">
+                    <a onclick="showcart()" ><i class="fa-solid fa-bag-shopping"></i
+          ></a>
+                    <i id="bar" class="fa-solid fa-grip-lines"></i>
+                </div>
+            </div>
+            <div class="title-info">
+                <h1>Find Your Pair of Air Force 1's</h1>
+                <h3>Designer, Collabs, Pop Culture, We got what your looking for</h3>
+                <button class="btn">Shop Now</button>
+            </div>
+        </section>
+
+        <section id="aboutus" class="new-arrival">
+            <h1 style="color: black">About Us</h1>
+            <p style="margin-top: 30px">
+                Air Forces have remained popular since their first release in 1982, despite the fact that they are becoming increasingly difficult to get. Our objective is to keep supply in line with demand while also providing consumers with unique and eye-catching
+                designs inspired by the original Air Force 1s.
+            </p>
+        </section>
+
+        <section id="new" class="new-arrival">
+            <h1 style="color: black">New Arrivals</h1>
+            <p style="margin-top: 30px">Experience the latest and greatest designs</p>
+            <div class="prod-container">
+                <div class="prod" draggable="true" data-price="240.00">
+                    <img src="img/cartoon.png" alt="" />
+                    <div class="des">
+                        <span>By: WokeCustoms</span>
+                        <p>
+                            <h2>Nike Air Force 1s "Cartoon"</h2>
+                        </p>
+                        <p>Price:</p>
+                        <h3>$240</h3>
+                    </div>
+                    <a class="items" href="#" id="items_cartoon">
+                </div>
+                <div class="prod" draggable="true" data-price="260.00">
+                    <img src="img/joker.png" alt="" />
+                    <div class="des">
+                        <span>By: Twinklecouture</span>
+                        <h2>Nike Air Force 1s "Joker"</h2>
+                        <p>Price:</p>
+                        <h3>$260</h3>
+                    </div>
+                    <a class="items" href="#" id="items_joker"></a>
+                </div>
+                <div class="prod" draggable="true" data-price="220.00">
+                    <img src="img/Colorful.png" alt="" />
+                    <div class="des">
+                        <span>By: WokeCustoms</span>
+                        <h2>Nike Air Force 1s "Colorful"</h2>
+                        <p>Price:</p>
+                        <h3>$220</h3>
+                    </div>
+                    <a class="items" href="#" id="items_colorful"></a>
+                </div>
+                <div class="prod" draggable="true" data-price="230.00">
+                    <img src="img/cowboys.png" alt="" />
+                    <div class="des">
+                        <span>By: Kiaun_Customs</span>
+                        <h2>Nike Air Force 1s "Dalas Cowboys"</h2>
+                        <p>Price:</p>
+                        <h3>$230</h3>
+                    </div>
+                    <a class="items" href="#" id="items_cowboys"></a>
+                </div>
+                <div class="prod" draggable="true" data-price="280.00">
+                    <img src="img/gojo.png" alt="" />
+                    <div class="des">
+                        <span>By: WokeCustoms</span>
+                        <h2>Nike Air Force 1s "Jujutsu Kaisen"</h2>
+                        <p>Price:</p>
+                        <h3>$280</h3>
+                    </div>
+                    <a class="items" href="#" id="items_Jujutsu"></a>
+                </div>
+
+                <div class="prod" draggable="true" data-price="245.00">
+                    <img src="img/glitched.png" alt="" />
+                    <div class="des">
+                        <span>By: Iamsi</span>
+                        <h2>Nike Air Force 1s "Glitched"</h2>
+                        <p>Price:</p>
+                        <h3>$245</h3>
+                    </div>
+                    <a class="items" href="#" id="items_cowboys"></a>
+                </div>
+
+                <div class="prod" draggable="true" data-price="220.00">
+                    <img src="img/Pastel.png" alt="" />
+                    <div class="des">
+                        <span>By: WokeCustoms</span>
+                        <h2>Nike Air Force 1s "Pastel"</h2>
+                        <p>Price:</p>
+                        <h3>$220</h3>
+                    </div>
+                    <a class="items" href="#" id="items_pastel"></a>
+                </div>
+
+                <div class="prod" draggable="true" data-price="450.00">
+                    <img src="img/MHA.png" alt="" />
+                    <div class="des">
+                        <span>By: Dailysavcustoms</span>
+                        <h2>Nike Air Force 1s "MHA"</h2>
+                        <p>Price:</p>
+                        <h3>$450</h3>
+                    </div>
+                    <a class="items" href="#" id="items_mha"></a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="calltoaction">
+            <h3 style="color: #606063">
+                Save <span style="color: #088178">30% Off</span> your first purchase
+            </h3>
+            <h2>Sign up now to complete your first purchase</h2>
+            <button class="btn" style="width: 150px; height: 40px">Sign Up</button>
+            <button class="btn-empty" style="width: 150px; height: 40px">
+        Sign In
+      </button>
+        </section>
+        <section class="on-sale">
+            <h1 style="color: black">On Sale</h1>
+            <p style="margin-top: 30px">Find great saving in designs you love</p>
+            <div class="prod-container">
+
+                <div class="prod" draggable="true" data-price="199.00">
+                    <img src="img/camo.png" alt="" />
+                    <div class="des">
+                        <span>By: HumbleKicksCo</span>
+                        <h2>Nike Air Force 1s "Camo"</h2>
+                        <p>Price:</p>
+                        <h3>$199</h3>
+                    </div>
+                    <a class="items" href="#" id="items_camo"></a>
+                </div>
+
+                <div class="prod" draggable="true" data-price="200.00">
+                    <img src="img/mix.png" alt="" />
+                    <div class="des">
+                        <span>By: HumbleKicksCo</span>
+                        <h2>Nike Air Force 1s "Mix Match"</h2>
+                        <p>Price:</p>
+                        <h3>$200</h3>
+                    </div>
+                    <a class="items" href="#" id="items_mixmatch"></a>
+                </div>
+                <div class="prod" draggable="true" data-price="210.00">
+                    <img src="img/gold.png" alt="" />
+                    <div class="des">
+                        <span>By: Custom Converse</span>
+                        <h2>Nike Air Force 1s "Gold Brush"</h2>
+                        <p>Price:</p>
+                        <h3>$210</h3>
+                    </div>
+                    <a class="items" href="#" id="items_gold"></a>
+                </div>
+                <div class="prod" draggable="true" data-price="180.00">
+                    <img src="img/blue.png" alt="" />
+                    <div class="des">
+                        <span>By: Customsbytal</span>
+                        <h2>Nike Air Force 1s "Bue Drip"</h2>
+                        <p>Price:</p>
+                        <h3>$180</h3>
+                    </div>
+                    <a class="items" href="#" id="items_buedrip"></a>
+                </div>
+                <div class="prod" draggable="true" data-price="210.00">
+                    <img src="img/PastelR.png" alt="" />
+                    <div class="des">
+                        <span>By: WokeCustoms</span>
+                        <h2>Nike Air Force 1s "Pastel"</h2>
+                        <p>Price:</p>
+                        <h3>$210</h3>
+                    </div>
+                    <a class="items" href="#" id="items_pastel1"></a>
+                </div>
+                <div class="prod" draggable="true" data-price="185.00">
+                    <img src="img/cow.png" alt="" />
+                    <div class="des">
+                        <span>By: WokeCustoms</span>
+                        <h2>Nike Air Force 1s "Cow Skin"</h2>
+                        <p>Price:</p>
+                        <h3>$185</h3>
+                    </div>
+                    <a class="items" href="#" id="items_cowskin"></a>
+                </div>
+                <div class="prod" draggable="true" data-price="215.00">
+                    <img src="img/halloween.png" alt="" />
+                    <div class="des">
+                        <span>By: Isaacc_</span>
+                        <h2>Nike Air Force 1s "Halloween"</h2>
+                        <p>Price:</p>
+                        <h3>$215</h3>
+                    </div>
+                    <a class="items" href="#" id="items_halloween"></a>
+                </div>
+                <div class="prod" draggable="true" data-price="205.00">
+                    <img src="img/onepiece.png" alt="" />
+                    <div class="des">
+                        <span>By: Sneaxbyarish</span>
+                        <h2>Nike Air Force 1s "One Piece"</h2>
+                        <p>Price</p>
+                        <h3>$205</h3>
+                    </div>
+                    <a class="items" href="#" id="items_onepiece"></a>
+                </div>
+            </div>
+        </section>
+        <section id="reviews" class="reviews">
+            <div class="container">
+                <h1 style="color: black">Review</h1>
+                <H3>Rank</H3>
+                <div class="star-widget">
+                  <input type="radio" name="rate" id="rate-5">
+                  <label style="font-size: 20px;" for="rate-5" class="fa-solid fa-1"></label>
+                  <input type="radio" name="rate" id="rate-4">
+                  <label style="font-size: 20px;" for="rate-4" class="fa-solid fa-2"></label>
+                  <input type="radio" name="rate" id="rate-3">
+                  <label style="font-size: 20px;" for="rate-3" class="fa-solid fa-3"></label>
+                  <input type="radio" name="rate" id="rate-2">
+                  <label style="font-size: 20px;" for="rate-2" class="fa-solid fa-4"></label>
+                  <input type="radio" name="rate" id="rate-1">
+                  <label style="font-size: 20px;" for="rate-1" class="fa-solid fa-5"></label>
+                  <form action="#">
+                    <header></header>
+                    <div class="textarea">
+                      <textarea cols="30" placeholder="Describe your experience.."></textarea>
+                    </div>
+                    <div>
+                      <button style="width: 150px; margin:10px auto; border-radius: 5px;" class="btn1"type="submit">Post</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+        </section>
+
+        <section class="promos">
+            <div class="text">
+                <h3>Sign Up For Email Alerts On Special Deals</h3>
+                <p>Get weakly update on news about new drops and amazing deals</p>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Email Address" />
+                <button class="btn">Sign Up</button>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="col">
+                <img style="max-width: 100px; max-height: 100px" src="img/SCS-logo.png" alt="" />
+                <h3 style="margin: 40px 0">Contact</h3>
+                <p><strong>Address:</strong>350 Victoria St, Toronto, ON M5B 2K3</p>
+                <p><strong>Phone:</strong>(416)-979-5000</p>
+                <p><strong>Hours:</strong>9:00 Am - 7:00 Pm, Monday - Saturday</p>
+            </div>
+
+            <div class="col">
+                <h3 style="margin-top: 110px">Follow Us</h3>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-instagram"></i> </a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="location">
+                    <h3 style="margin-top: 110px">Location</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.5438230600403!2d-79.38099038450216!3d43.65765847912112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb35431c1395%3A0xe8ed8bd69125d6f4!2sRyerson%20University!5e0!3m2!1sen!2sca!4v1647124838363!5m2!1sen!2sca"
+                        width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>
+                    <i class="fa-solid fa-copyright"></i> 2022 Smart Customer Services - All Rights Reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
+    <div id="cart">
+        <h1>Shopping Cart</h1>
+        <ul></ul>
+        <p class="sum_price" id="total"><strong>Total:</strong> $<span id="total1">0.00</span></p>
+        <hr />
+        <div id="cardInfo" class="col-75">
+            <div class="container">
+              <form action="#">
+              
+                <div class="row">
+                  <div class="col-50">
+                    <h3>Billing Address</h3>
+                    <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                    <input type="text" id="email" name="email" placeholder="john@example.com">
+                    <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                    <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                    <label for="city"><i class="fa fa-institution"></i> City</label>
+                    <input type="text" id="city" name="city" placeholder="New York">
+        
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="province">Province</label>
+                        <input type="text" id="province" name="province" placeholder="Province">
+                      </div>
+                      <div class="col-50">
+                        <label for="postalcode">Postal Code</label>
+                        <input type="text" id="postal code" name="Postal code" placeholder="XXX XXX">
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="col-50">
+                    <h3>Payment</h3>
+                    <label for="fname">Accepted Cards</label>
+                    <div class="icon-container">
+                      <i class="fa fa-cc-visa"></i>
+                      <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                    </div>
+                    <label for="cname">Name on Card</label>
+                    <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                    <label for="ccnum">Credit card number</label>
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                    <label for="expmonth">Exp Month</label>
+                    <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="expyear">Exp Year</label>
+                        <input type="text" id="expyear" name="expyear" placeholder="2018">
+                      </div>
+                      <div class="col-50">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="352">
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <input type="submit" value="Continue to checkout" class="btn1">
+              </form>
+            </div>
+          </div>
+          <button style="width: 100px; background-color: #04aa6d;" class="btn" onclick="toggleText()">Payment</button>
+        <h2>Drop here to add to cart</h2>
+    </div>
+
+    <script>
+        function toggleText(){
+            const x = document.getElementById("cardInfo");
+            if(x.style.display === "none"){
+                x.style.display = "block";
+            }
+            else {
+                x.style.display = "none";
+            }
+        }
+        var itemlist = document.querySelectorAll('.prod'); //the item that is been dragged
+        var dragDom = null; //the item is being dragged
+        var total = document.getElementById("total1");
+        for (let i = 0, len = itemlist.length; i < len; i++) {
+            itemlist[i].ondragstart = function(ev) {
+                var name = this.getElementsByTagName('h2');
+                var price = this.getElementsByTagName('h3');
+                var nprice = price[0].innerHTML.substring(1);
+                var num =  parseInt(total.innerHTML) +  parseInt(nprice);
+                total.innerHTML = num.toString();
+                ev.dataTransfer.setData('item_name', name[0].innerHTML);
+                ev.dataTransfer.setData('item_price', price[0].innerHTML);
+
+            }
+        }
+        if (showcart() == true) {
+            getElementById("cart").style.display = "none";
+            getElementById("content").style.margin = "0 0 0 0"; 
+        }
+        function showcart() {
+            getElementById("cart").style.display = "block";
+            getElementById("content").style.margin = "0 500px 0 0"; 
+        }
+        //the container for the items
+        var cart = document.getElementById('cart');
+        //dragover function and drop function
+        cart.ondragover = function(ev) {
+            ev.preventDefault();
+        }
+        cart.ondrop = function(ev) {
+            var titles = ev.dataTransfer.getData('item_name');
+            var money = ev.dataTransfer.getData('item_price');
+            var cartP = document.createElement('p');
+            var cartSpan = document.createElement('span');
+            cartSpan.className = 'order_item';
+            cartSpan.innerHTML = 1;
+            cartP.appendChild(cartSpan);
+
+            var cartSpan = document.createElement('span');
+            cartSpan.className = 'items_name';
+            cartSpan.innerHTML = titles;
+            cartP.appendChild(cartSpan);
+
+            var cartSpan = document.createElement('span');
+            cartSpan.className = 'sum_price';
+            cartSpan.innerHTML = money;
+            cartP.appendChild(cartSpan);
+
+            cartP.appendChild(cartSpan);
+            //the item been dragged is adding to the target container cart
+            cart.appendChild(cartP);
+        }
+    </script>
+</body>
+
+</html>
